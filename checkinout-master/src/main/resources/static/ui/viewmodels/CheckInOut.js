@@ -1,4 +1,6 @@
-const ticket = 'LIKLckvwlJT9cWIhEQTwfJuU557garB7J1tppEvMocW-iUiFaI9vUMg2qx3lzwqT3mpp5OI-QyR6_PBudG1D9Q';
+
+const ticket = 'HoagFKDcsGMVCIY2vOjf9ioSNfj6t_ofLGRrWrLDhLlR66xPpSjV6crHCyUUb3mN-jEheTKSo3KH66iv1st5Gg';
+
 const timestamp = Date.now();
 const nonceStr = Math.random().toString(16).substr(2);
 
@@ -16,7 +18,7 @@ var signature = shaObj.getHash("HEX");
 
 wx.config({
     debug: false,
-    appId: 'wx0c14a6dfeab19166', // 必填，公众号的唯一标识
+    appId: 'wx6c7b0e1e3015b995', // 必填，公众号的唯一标识
     timestamp: timestamp, // 必填，生成签名的时间戳
     nonceStr: nonceStr, // 必填，生成签名的随机串
     signature: signature,// 必填，签名

@@ -1,8 +1,13 @@
 package io.xt.service;
 
 
+import io.xt.enumeration.CheckType;
+import io.xt.po.User;
+
+import java.util.Date;
+
 public interface UserService {
-//    User getById(Long userId);
-//    void create(User user);
-//    void checkInOut(String openId, CheckType checkType, Date time);
+    User selectUserById(String openid);
+    void create(User user);
+    void checkInOut(String openId, CheckType checkType, Date time);
 }

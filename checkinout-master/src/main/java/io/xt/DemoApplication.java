@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
-@MapperScan("\\src\\main\\java\\io\\xt\\dao")
+@MapperScan("io.xt.dao")
 @EnableCaching
 public class DemoApplication {
     public static void main(String[] args) {
